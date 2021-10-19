@@ -9,8 +9,18 @@
 </head>
 <body>
     <div class="name">
-        <h1>Meu pix </h1>
-        <p>044.081.772-29</p>
+        <form>
+            <label for="email">
+                <h3>Digite seu email</h3>
+                <input type="email" id="email">
+            </label>
+            <label for="senha">
+                <h3>Digite sua senha</h3>
+                <input type="password" id="senha">
+            </label><br><br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+        <p class="texto"></p>
     </div>
     <script src="assets/js/main.js"></script>
 </body>

@@ -1,0 +1,147 @@
+/* Estilização geral*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=Nunito:ital,wght@1,700&display=swap');
+:root {
+        /* Cores padroes*/
+    --color-bg-color:#121528;
+    --color-text-white:#e5e5e6;
+    --color-text-yellon: #feb302;
+    --color-yellon: #feb303;
+    --color-cinza-claro: #8b8b8d;
+    --color-cinza-escuro: #424242;
+
+        /* Tamanhos de textos padroes*/
+    --size-text-h1: 40px;
+    --size-text-h2: 23px;
+    --size-text-conteudo: 16px;
+
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg-color)
+}
+#conteiner {
+    border: 1px solid white;
+    width: 960px;
+    height: 100vh;
+}
+.detalhe {
+    margin: 15px 0 0 0;
+    width: 150px;
+    height: 10px;
+    background-color: var(--color-yellon);
+}
+
+/* Estilização do Cabeçalho*/
+#areaHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+#logo h2 {
+    font-size: var(--size-text-h1);
+    color: var(--color-text-white);
+}
+#menu {
+    display: flex;
+    align-items: center;
+}
+#menu ul {
+    margin-right: 100px;
+}
+#menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--color-text-white);
+    font-size: var(--size-text-conteudo);
+}
+#menu a:hover {
+    color: var(--color-text-yellon);
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+}
+
+/* Estilização da capa*/
+#areaCapa {
+    display: flex;
+    margin-top: 50px;
+}
+#conteudoCapa {
+    flex:1.5;
+    margin: 30px 0px 0px 20px;
+}
+#conteudoCapa h1 {
+    font-size:  var(--size-text-h1);
+    color: var(--color-text-white);
+}
+#conteudoCapa h2 {
+    font-size:  var(--size-text-h1);
+    color: var(--color-text-yellon);
+}
+#conteudoCapa p {
+    margin: 20px 0 0 0;
+    text-align: justify;
+    font-size:  var(--size-text-conteudo);
+    color: var(--color-text-white);
+}
+#fotoCapa {
+    flex: 1;
+    margin: 30px 0px 0px 75px;
+}
+#fotoCapa img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-top: 5px solid var(--color-yellon);
+    border-right: 2px solid var(--color-yellon);
+    border-bottom: 5px solid var(--color-yellon);
+    border-left: 2px solid var(--color-yellon);
+}
+
+/* Estilização da Area dos Links*/
+#areaLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.cardLink {
+    display: inline-block;
+    margin-right: 50px;
+}
+.cardLink a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-cinza-escuro);
+    font-size: var(--size-text-h2);
+}
+.cardLink a:hover {
+    text-decoration: none;
+    color: var(--color-cinza-claro);
+    font-size: var(--size-text-h2);
+}
+.cardLink a ion-icon{
+    margin-right: 10px;
+    font-size: 30px;
+}
+.cardLink a ion-icon{
+    margin-right: 10px;
+    font-size: 30px;
+}

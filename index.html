@@ -4,22 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Meu Portfolio Profissional</title>
 </head>
 <body>
-    <div class="name">
-        <form>
-            <label for="email">
-                <h3>Digite seu email</h3>
-                <input type="email" id="email">
-            </label>
-            <label for="senha">
-                <h3>Digite sua senha</h3>
-                <input type="password" id="senha">
-            </label><br><br>
-            <button onclick="enviar()">Enviar</button>
-        </form>
+    <div id="conteiner">
+        <header id="areaHeader">
+            <div id="logo">
+                <h2>Logo</h2>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <a href="#">
+                        <li>GitHub</li>
+                    </a>
+                    <a href="#">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="#">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#">
+                        <li>Contatos</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <section id="areaCapa">
+            <div id="conteudoCapa">
+                <h1>Olá! eu Sou</h1>
+                <h2>Jackson Dias!</h2>
+                <p>Eu sou novo no mundo da programação, mas estou aprendo muito rapido as ferramentas como: JavaScript,
+                    CSS e HTMl, fiz esse Portfolio para mostrar um pouco sobre mim.
+                </p>
+                <div class="detalhe"></div>
+            </div>
+            <div id="fotoCapa">
+                <img src="assets/img/capa.jpg" alt="foto_de_Perfil">
+            </div>
+        </section>
+        <section id="areaLink">
+            <div class="cardLink">
+                <a href="#">
+                    <ion-icon name="logo-microsoft"></ion-icon>
+                    <span>Microsoft</span>
+                </a>  
+            </div>
+            <div class="cardLink">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>Facebook</span>
+                </a>  
+            </div>
+            <div class="cardLink">
+                <a href="#">
+                    <span>Linked</span>
+                   <ion-icon name="logo-linkedin"></ion-icon>
+                </a>  
+            </div>
+            <div class="cardLink">
+                <a href="#">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitGub</span>
+                </a>  
+            </div>
+        </section>
     </div>
     <script src="assets/js/main.js"></script>
 </body>

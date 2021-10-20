@@ -123,6 +123,10 @@ body {
 .cardLink {
     display: inline-block;
     margin-right: 50px;
+    font-weight: 550;
+}
+.cardLink:last-child {
+    margin-right: 0px;  
 }
 .cardLink a {
     display: flex;
